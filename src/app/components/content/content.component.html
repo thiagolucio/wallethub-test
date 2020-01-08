@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="container-fluid">
+    <h1 class="ml-4p mt-3p">Credit Opportunities With Good Approval Odds <span class="badge badge-light badge-trade"><i class="fas fa-cross fa-2x text-dark"></i></span></h1>
+    <div class="container bg-light">
+      <div class="row mb-3">
+        <div class="col-md-8 text-left">
+          <h3>
+            Barclaycard
+            CashForward<span class="badge badge-light badge-trade">TM</span>
+            World MasterCard<span class="badge badge-light badge-trade">TM</span>
+          </h3>
+        </div>
+        <div class="col-md-4 text-right">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <span class="ml-3">3252 REVIEWS</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="row">
+            <div class="col-md-7">
+              <img src="assets/img/card.png" alt="Visa Card Image" class="card img-fluid">
+            </div>
+            <div class="col-md-5">
+                <div class="text-center">
+                  <h4>Approval<br>Odds <span class="badge badge-light badge-trade"><i class="fas fa-cross text-dark"></i></span></h4>
+                </div>
+              <button class="btn btn-success btn-lg btn-rounded">Very Good</button>
+            </div>
+            <div class="col-12 mb-3">
+              <button class="btn btn-warning btn-block btn-lg text-light mt-5 br-10">Apply Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <ul class="list-group ml-5">
+            <li class="list-item mb-3" *ngFor="let item of contentList">
+              {{item.description}}
+              <span *ngIf="item.id === 3 ? showMore : !showMore "><a href="https://wallethub.com/" target="_blank">...show more</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr class="mt-5">
+      <div class="row">
+        <div class="col-12">
+          <p class="list-item">See Details Rates & Fees</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

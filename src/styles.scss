@@ -1,1 +1,211 @@
-/* You can add global styles to this file, and also import other style files */
+/* Local Custom Font */
+@font-face {
+  font-family: 'proxima-nova-thin';
+  src: url('./assets/fonts/ProximaNova-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-light';
+  src: url('./assets/fonts/Proxima Nova Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-regular';
+  src: url('./assets/fonts/ProximaNova-Reg.otf') format('opentype');
+}
+@font-face {
+  font-family: 'proxima-nova-regular-italic';
+  src: url('./assets/fonts/Proxima Nova Regular Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-semibold';
+  src: url('./assets/fonts/Proxima Nova Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-semibold-italic';
+  src: url('./assets/fonts/Proxima Nova Semibold Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-bold';
+  src: url('./assets/fonts/ProximaNova-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-extrabold';
+  src: url('./assets/fonts/ProximaNova-Extrabold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-extraboldit';
+  src: url('./assets/fonts/ProximaNova-ExtrabldIt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-black';
+  src: url('./assets/fonts/ProximaNova-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-blackit';
+  src: url('./assets/fonts/ProximaNova-BlackIt.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'proxima-nova-bold-italic';
+  src: url('./assets/fonts/Proxima Nova Bold Italic.otf') format('opentype');
+}
+
+/* general system */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'proxima-nova-regular', serif;
+  font-size: 1em;
+  overflow-x: hidden;
+  background: #F1F5F8;
+}
+
+h1, h2, h3, h4, h5, h6 {color: #373737;}
+
+h1 {
+  font-family: 'proxima-nova-bold', serif;
+  color: #373737;
+}
+
+/* short subs */
+.bg-light {background-color: #FFF!important;}
+.bg-blue-default {background-color: #23113A;}
+.bg-default {background-color: #F1F5F8}
+.btn {font-family: 'proxima-nova-bold', serif; border: 0;}
+.btn-success {background-color: #59D8D1}
+.btn-success:hover {background-color: #58b0a9}
+.btn-warning {background-color: #FA6E3D}
+.btn-warning:hover {background-color: #c8643c}
+.btn-rounded {
+  border-radius: 40px;
+  min-width: 100%;
+  padding: 10px 30px!important
+}
+.btn-lg {padding: 16px 0; font-size: 24px;}
+
+.ml-4p {margin-left: 4%}
+.mt-3p {margin-top: 3%}
+.v-align-m {vertical-align: middle}
+.font8 {font-size: 8px;}
+.br-10 {border-radius: 10px;}
+hr { border-top: 1px solid #7F949C;}
+
+
+/*Animated*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.flip {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip;
+}
+
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+
+/* hidden itens inpired in bootstrap 3 */
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}

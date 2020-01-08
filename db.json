@@ -1,0 +1,21 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "description": "Get a $100 cash rewards bonus after you spend $500 in purchases in the first 90 days after account oppening."
+    },
+    {
+      "id": 2,
+      "description": "Earn unlimited 1.5% cash rewards on every purchase."
+    },
+    {
+      "id": 3,
+      "description": "Earn unlimited 1.5% cash rewards on every purchase..."
+    }
+  ],
+  "user": {
+    "id": "01",
+    "username": "admin",
+    "password": "admin"
+  }
+}
