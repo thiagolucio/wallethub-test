@@ -7,6 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
  - Bootstrap 4 (purely)
  - JSON Server (for local Backend API )
  
+ ## Creating Map
+ 
  
 ## Run project
 
@@ -40,4 +42,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 5) The "id's" made at the local json bank were only used to two decimal places because it is a test you need no more.. 
 
-6) The login system created is fake and simple. It does not store your login and password. If you refresh the page the system will reload on the login screen.
+6) The login system created is simple. It does not store your login and password. If you refresh the page the system will reload on the login screen. Just used to show bind content inside app. 
+
+7) I found the size of the slogan exaggerated (image "Do the right thing". Especially the height. Personally I would create another type of art more productive with respect to layout / design in the privileged area of the browser screen. However I kept the originality of the image by be mandatory in the test.
