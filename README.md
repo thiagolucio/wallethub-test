@@ -38,6 +38,6 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 4) I put some comments in the codes to justify why I did it because it was a test. I make it clear that in actual development cases my comments are exclusively when needed. I make my codes as simple as possible so that they are easy to maintain, even for beginners. I believe this lowers system costs.
 
-5) Os Id's feitos no banco local json foi usado apenas duas casas decimais pois por ser teste não precisa de mais que isso. 
+5) The "id's" made at the local json bank were only used to two decimal places because it is a test you need no more.. 
 
-6) O sistema de Login criado é fake e simples. Ele não guarda seu login e senha. Se atualizar a página o sistema recarregará na tela de login.
+6) The login system created is fake and simple. It does not store your login and password. If you refresh the page the system will reload on the login screen.
