@@ -5,21 +5,11 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { AuthService } from '../../shared/services/auth.service';
-import {animate, state, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
-  styleUrls: ['./content.component.scss'],
-  animations: [
-    trigger('indicatorRotate', [
-      state('collapsed', style({transform: 'rotate(0deg)'})),
-      state('expanded', style({transform: 'rotate(180deg)'})),
-      transition('expanded <=> collapsed',
-        animate('225ms cubic-bezier(0.4,0.0,0.2,1)')
-      ),
-    ])
-  ]
+  styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
 

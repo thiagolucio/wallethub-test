@@ -13,9 +13,12 @@
       "description": "Earn unlimited 1.5% cash rewards on every purchase..."
     }
   ],
-  "user": {
-    "id": "01",
-    "username": "admin",
-    "password": "admin"
-  }
+  "apply": [
+    {
+      "name": "Thiago Lúcio Bittencourt Thomaz",
+      "email": "thiagolucio@gmail.com",
+      "value": 235455
+    }
+  ]
 }
+

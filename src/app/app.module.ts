@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -13,6 +13,9 @@ import { LoginComponent } from './login/login.component';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { PromoComponent } from './components/promo/promo.component';
 import { ContentComponent } from './components/content/content.component';
+import { ApplyModule } from './components/apply-detail/apply.module';
+import { ApplyChildComponent } from './components/apply-child/apply-child.component';
+import { CurrencyMaskDirective } from './shared/directive/currency-mask.directive';
 
 
 @NgModule({
@@ -22,20 +25,25 @@ import { ContentComponent } from './components/content/content.component';
     LoginComponent,
     TopbarComponent,
     PromoComponent,
-    ContentComponent
+    ContentComponent,
+    ApplyChildComponent,
+    CurrencyMaskDirective
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     RouterModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ApplyModule,
   ],
   exports: [
     BrowserAnimationsModule,
     AppRoutingModule,
     RouterModule,
+    ApplyModule,
+    CurrencyMaskDirective
   ],
   providers: [
     AuthService,

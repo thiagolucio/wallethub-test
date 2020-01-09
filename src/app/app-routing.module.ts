@@ -7,7 +7,8 @@ import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent},
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuard],  data: { animation: 'isRight' }},
+  { path: 'home', component: HomeComponent, canActivate: [AuthGuard], data: { animation: 'isLeft' } },
+  {path: 'applyDetail', loadChildren: () => import('./components/apply-detail/apply.module').then(mod => mod.ApplyModule)}
 ];
 
 @NgModule({
